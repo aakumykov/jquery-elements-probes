@@ -1,0 +1,7 @@
+* { margin: 0px; padding: 0px; }
+
+#el1 {
+	background-color: darkturquoise;
+	width:100px;
+	height: 100px;
+}
