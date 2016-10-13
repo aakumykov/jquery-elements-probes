@@ -1,21 +1,31 @@
 'use strict';
 
+var app = angular.module('App',[]);
+
+app.controller('Ctrl', function($scope){
+	$scope.element;
+
+});
+
 $(document).ready(function(){
 
-	$(document).mousemove(function(arg){
-		//console.log('мышь движется');
-	});
+	// var element1 = $('#el1');
+	// console.log(element1);
 
-	var element1 = $('#el1');
-	console.log(element1);
+	console.log(
+		angular.element(
+			$('#element1').attr('id')
+		)
+	);
 
-	element1.mousedown(function(obj){
-		obj.pressed = true;
-		console.log('pressed: '+obj.pressed);
-	});
+	// app.element.on('mousedown', function(obj){
+	// 	// obj.pressed = true;
+	// 	// console.log('pressed: '+obj.pressed);
+	// 	alert
+	// });
 
-	element1.mouseup(function(obj){
-		obj.pressed = false;
-		console.log('pressed: '+obj.pressed);
-	});
+	// element1.mouseup(function(obj){
+	// 	obj.pressed = false;
+	// 	console.log('pressed: '+obj.pressed);
+	// });
 });
